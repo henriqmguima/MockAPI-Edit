@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body {
+    font-family: 'Product Sans', Arial, sans-serif, sans-serif;
+    max-width: 100%;
+    background: linear-gradient(to right, #070809, #0B0C0E); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    transition: background 0.3s ease; /* Transição suave */
+}
+
+
+header img {
+    width: 2%;
+    margin: 10px;
+}
+.titulo h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+#homepage-container {
+    height: 65vh; /* Altura da tela inteira */
+    width: 99vw;  /* Largura da tela inteira */
+    background-image: url('home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    margin: 0;
+    overflow: hidden; /* Para evitar barras de rolagem */
+}
+
+form input{
+    width: 80%;
+    display: block;
+    margin: 10px;
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(56, 56, 56);
+}
+#searchInput{
+    display: block;
+    margin: 20px;
+    width: 20%;
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(56, 56, 56);
+    color: #fff;
+}
+
+.btn-plus{
+    border-radius: 5px;
+    display: flex;
+    padding: 4px 70px;
+    background: linear-gradient(45deg, #cb3a3a, #e94560); 
+    border: 0.1px solid #cb3a3a
+}
+.btn-plus:hover{
+    background-image: url('https://64.media.tumblr.com/f08b61016736dfb7e9b5f87a4ecc8637/tumblr_n19f0274mT1s8gf9ko5_500.gifv'); /* O GIF que aparece ao passar o mouse */
+    background-size: cover; /* Faz o GIF cobrir todo o elemento */
+    background-position: center; /* Centraliza o GIF dentro do elemento */
+    border: 0.1px solid #fff;
+    transform: scale(1.1); /* Increase size on hover */
+}
+button {
+    background-color: #0F118D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0.1px solid #272999
+  }
+  
+  button:hover {
+    background-color: #080959; /* Darker green */
+    transform: scale(1.1); /* Increase size on hover */
+  }
+
+.edit-btn{
+    background-color: #0f0d0d; /* Green */
+    border: 0.1px solid rgb(42, 41, 41);
+}
+
+.edit-btn:hover{
+    background-color: #1e1e1e; /* Green */
+}
+
+.dlt-btn{
+    background: #B70405; 
+    border: 0.1px solid #a81d1d;
+}
+
+.dlt-btn:hover{
+    background-color: #cb3a3a; /* Green */
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px; /* Ajuste para a espessura da borda */
+    background: linear-gradient(45deg, #0F118D, #B70405); /* Gradiente da borda */
+    border-radius: 12px; /* Arredonda a borda externa */
+    width: 406px; /* Ajuste para acomodar o padding do gradiente */
+}
+
+#home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 120px 0 0 90px;
+}
+#home-container h1{
+    text-align: none;
+    margin: 20px 0;
+    width: 220px;
+    font-size: 60px;
+    padding-left: 10px;
+    background: linear-gradient(45deg, #cb3a3a, #B70405);
+    border-radius: 3px; 
+}
+.text{
+    width: 40%;
+    font-size: 1em; line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    transition: 0.5s;
+    color: #080bb2;
+}
+
+table {
+    text-align: center;
+    border-spacing: 0 50px; 
+    width: 80%;
+}
+
+th, td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+th:first-child, td:first-child {
+    width: 35%;
+}
+
+td img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.options {
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.options ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Exibe os itens lado a lado */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+.options li {
+    cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: white; /* Texto branco */
+    font-weight: bold; /* Negrito */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza alterações */
+    border: 0.1px solid transparent;
+
+}
+
+.options li:hover {
+    background-color: #221625; /* Green */
+    border: 0.1px solid rgb(42, 41, 41);
+    transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+.options li:active {
+    transform: scale(1); /* Volta ao tamanho original ao clicar */
+    background-color: #004085; /* Cor ainda mais escura ao clicar */
+}
+.options li.ascending::after {
+    content: ' ▲'; /* Seta para cima */
+    font-size: 12px;
+}
+
+.options li.descending::after {
+    content: ' ▼'; /* Seta para baixo */
+    font-size: 12px;
+}
+
+thead .nomeh:hover, .diretorh:hover, .datah:hover{
+    background-color: rgb(240, 248, 255);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #0f0f0f;
+    border-radius: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0b0b0b;
+}
+
+
+td .image-container {
+    width: 100%;
+    height: 100%; /* Ajusta a altura da imagem ao tamanho da célula */
+    object-fit: cover; /* Corta a imagem para preencher completamente a célula */
+    display: inline-block;
+    margin: 0;
+    background: linear-gradient(45deg, #0F118D, #B70405); /* Gradiente da borda */
+    padding: 2px;
+    border-radius: 10px;
+}
+
+#moviesTable tbody tr{
+    margin-bottom: 500px;
+}
+.info{
+    width: 35%;
+    max-width: 35%;
+    text-align: left;
+}
+
+.info .nome {
+    font-size: 1.8em;
+    margin: 20px 0;
+    text-transform: uppercase;
+    
+}
+
+
+.details .diretor, .data {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+
+}
+.details {
+    width: 15%;
+}
+
+.actions {
+    width: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Estilos para cada linha da tabela */
+#moviesTable tr {
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    overflow: hidden; /* Garante que o gradiente não ultrapasse a célula */
+    z-index: 0; /* Mantém o tr abaixo do pseudo-elemento */
+}
+
+/* Pseudo-elemento para a borda gradiente */
+#moviesTable tr::before {
+    content: '';
+    position: absolute;
+    top: -2px; /* Para estender a borda para fora do tr */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(to right, #130c1c, #1f1d24); /* Gradiente desejado */
+    border-radius: 8px; /* Opcional: arredonda as bordas */
+    z-index: -1; /* Coloca o gradiente atrás do conteúdo da linha */
+    border: 2px solid #1c1916;
+}
+
+
+.popup {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0f0f0f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    opacity: 0; /* Começa invisível */
+    transform: translate(-50%, -50%) scale(0.9); /* Começa um pouco menor */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Efeito de transição suave */
+}
+
+.popup-border {
+    padding: 3px; /* Espessura da borda */
+    background: linear-gradient(45deg, #0F118D, #B70405); /* Gradiente da borda */
+    border-radius: 10px;
+}
+.popup-content {
+    background-color: #0f0f0f; /* Cor de fundo interna do formulário */
+    padding: 20px 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Distância entre os conjuntos de label e input */
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 13px;
+    margin: 0px;
+}
+label{
+    font-weight: bold;
+    margin-top: -10px;
+
+}
+.popup input {
+    min-width: 380px;
+    max-width: 380px;
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    height: 40px;
+}
+
+#editDescription {
+    width: 100%;
+    resize: none; /* Impede o redimensionamento pelo usuário */
+    padding: 10px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: 'Product Sans', Arial, sans-serif, sans-serif;
+    margin-top: 10px;
+}
+
+
+
+.popup .input-label span {
+    display: block;
+    min-height: 18px; /* Ajuste a altura conforme necessário */
+    color: red;
+    font-size: 0.9em;
+    margin-top: 3px;
+}
+
+.popup button {
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    margin-left: 20%;
+    max-width: 220px;
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: rgb(182, 182, 182);
+    border: none;
+    width: 0px;
+    font-size: 20px; 
+}
+
+.close-btn:hover {
+    color: #800d05;
+    background-color: transparent;
+
+}
+.popup.show {
+    display: flex; /* Torna visível */
+    opacity: 1; /* Torna totalmente opaco */
+    transform: translate(-50%, -50%) scale(1); /* Redefine a escala para normal */
+}
+
+.star {
+    width: 20px; /* Defina o tamanho da estrela */
+    height: 20px;
+    margin-right: 2px; /* Espaço entre as estrelas */
+    vertical-align: middle;
+}
+
+.nota, .stars {
+    display: flex;
+    justify-self: center;
+    padding: 0px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #ffffff; /* Cor de fundo do ícone */
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    background-color: #ffffff; /* Cor de fundo do ícone */
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+input[type="date"] {
+    font-family: 'Product Sans', Arial, sans-serif, sans-serif;
+}
+

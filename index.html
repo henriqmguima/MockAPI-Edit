@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spawt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/logo-index.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fontawesome.com/icons/star?f=classic&s=solid" 
+      rel="stylesheet">
+</head>
+<body>
+    <div id="homepage-container">
+        <header>
+            <img src="icons/logo-index.png" alt="">
+            <h1 class="titulo">spawt</h1>
+            <input type="text" id="searchInput" placeholder="Buscar filmes...">
+            <button class="btn-plus" onclick="openAddPopup()">
+                <span class="material-icons">add_circle</span>
+            </button>            
+        </header>
+            <!-- Formulário de Adição/Edição de Filmes -->
+            <!-- <div class="form-container">
+                <form id="movieForm">
+                    <h2 id="formTitle">Adicionar Filme</h2>
+                    <input type="text" id="name" placeholder="Nome do Filme" required>
+                    <input type="text" id="diretor" placeholder="Diretor" required>
+                    <input type="date" id="realeseDate" required>
+                    <input type="url" id="poster" placeholder="URL do Poster" required>
+                    <div class="buttons">
+                        <button type="submit">Adicionar</button>
+                    </div>
+                </form>
+            </div>
+            -->
+        <div id="home-container">
+            <h1>SPAWT</h1>
+            <p class="text"><strong>Acesse, insira, edite e delete os conteúdos de uma API de filmes</strong></p>
+            <p class="text">Spawt é um site de conteúdos audiovisuais, utilizando do serviço MockaApi onde você pode acessar ao nome, diretor, data de lançamento e poster de filmes. Para conferir as informações inclusas no site e poder adicionar novos filmes acesse o site <a href="https://www.themoviedb.org/?language=pt-br" target="_blank"><strong>TMDB</strong></a>.
+            </p>
+        </div>
+    </div>
+    <!-- Tabela de Filmes -->
+     <div class="options">
+        <ul>
+            <li onclick="sortTable(0)">Nome</li>
+            <li onclick="sortTable(1)">Data</li>
+            <li onclick="sortTable(2)">Nota</ul>
+        </ul>
+     </div>
+    <table id="moviesTable">
+        <tbody>
+            <!-- As linhas da tabela serão inseridas aqui -->
+        </tbody>
+    </table>
+    
+        <!-- Popup para edição -->
+        <div id="editPopup" style="display: none;" class="popup">
+            <div class="popup-border">
+                <div class="popup-content">
+                    <button class="close-btn" onclick="closeEditPopup()">X</button>
+                    <h2 id="popupTitle"></h2>
+                    <div class="input-label">
+                        <label for="editName">Nome:</label>
+                        <input type="text" id="editName">
+                        <span id="nameError" style="color: red; display: none;">Por favor, insira o nome do filme.</span>
+                    </div>
+                    <div class="input-label">
+                        <label for="editDirector">Diretor:</label>
+                        <input type="text" id="editDirector">
+                        <span id="directorError" style="color: red; display: none;">Por favor, insira o nome do diretor.</span>
+                    </div>
+                    <div class="input-label">
+                        <label for="editRealeseDate">Data de Lançamento:</label>
+                        <input type="date" id="editRealeseDate">
+                        <span id="dateError" style="color: red; display: none;">Por favor, insira a data de lançamento.</span>
+                    </div>
+                    <div class="input-label">
+                        <label for="editPoster">URL do Poster:</label>
+                        <input type="text" id="editPoster">
+                        <span id="posterError" style="color: red; display: none;">Por favor, insira a URL do poster.</span>
+                    </div>
+                    <div class="input-label">
+                        <label for="editDescription">Descrição:</label>
+                        <input id="editDescription" rows="5" maxlength="400" placeholder="(máx. 400 caracteres)"></input>
+                        <span id="descriptionError" style="color: red; display: none;">Por favor, insira descrição do filme.</span>
+                    </div>
+                    <div class="input-label">
+                        <label for="editRating">Nota:</label>
+                        <input type="number" id="editRating" min="1" max="5" step="1">
+                        <span id="ratingError" style="color: red; display: none;">Por favor, a nota do filme.</span>
+                    </div>
+                    <button class="save-btn">Salvar</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
