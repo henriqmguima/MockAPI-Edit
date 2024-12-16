@@ -1,0 +1,34 @@
+Ainda é preciso realizar algumas alterações no projeto para ficar ideal, vou seguir trabalhando para poder concertar alguns erros de escrita e estruturá-lo melhor. Apesar disso, acredito que o projeto contém todos os itens exigidos.
+
+Irei deixar aqui itens para teste [nota vai ao criterio do user]:
+
+
+Nome: Shang-Chi and the Legend of the Ten Rings
+Descrição: Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.
+Data: 02/09/2021
+Diretor: Destin Daniel Cretton
+URL Poster: https://image.tmdb.org/t/p/original/zxWAv1A34kdYslBi4ekMDtgIGUt.jpg
+
+---------------------------------------------------------------
+
+Nome: Eternals
+Descrição: The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.
+Data: 04/11/2021
+Diretor: Chloé Zhao
+URL Poster: https://image.tmdb.org/t/p/original/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg
+
+---------------------------------------------------------------
+
+Nome: Spiderman: No Way Home
+Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
+Data: 16/12/2021
+Diretor: Jon Watts
+URL Poster: https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg
+
+---------------------------------------------------------------
+
+Nome: Doctor Strange in the Multiverse of Madness
+Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.
+Data: 05/05/2022
+Diretor: Sam Raimi
+URL Poster: https://image.tmdb.org/t/p/original/dTn1HGhCuq26IoBq9qKsiYNFxfq.jpg

@@ -1,0 +1,218 @@
+[
+    {
+    "name": "Iron-Man",
+    "poster": "https://image.tmdb.org/t/p/original/jPu8yiadqgzwFPGKJmGo637ASVP.jpg",
+    "realeseDate": "2008-04-30T07:00:00",
+    "diretor": "Jon Favreau",
+    "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+    "rating": "4",
+    "id": "1"
+  },
+  {
+    "name": "The Incredible Hulk",
+    "poster": "https://image.tmdb.org/t/p/original/jPu8yiadqgzwFPGKJmGo637ASVP.jpg",
+    "realeseDate": "2008-06-13T07:00:00",
+    "diretor": "Louis Leterrier",
+    "description": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
+    "rating": "3",
+    "id": "2"
+  },
+  {
+    "name": "Iron-Man 2",
+    "poster": "https://image.tmdb.org/t/p/original/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg",
+    "realeseDate": "2010-04-30T07:00:00",
+    "diretor": "Jon Favreau",
+    "description": "Tony Stark, now publicly known as Iron Man, resists government pressure to share his technology, teaming up with allies to fight powerful enemies.",
+    "rating": "3",
+    "id": "3"
+  },
+  {
+    "name": "Thor",
+    "poster": "https://image.tmdb.org/t/p/original/cDJ61O1STtbWNBwefuqVrRe3d7l.jpg",
+    "realeseDate": "2011-04-29T07:00:00",
+    "diretor": "Kenneth Branagh",
+    "description": "Thor, defying his father Odin, reignites an ancient war and is cast down to Earth as punishment. Among humans, he learns what it means to be a true hero when a powerful villain sends dark forces from Asgard to invade Earth.",
+    "rating": "2",
+    "id": "4"
+  },
+  {
+    "name": "Captain America: The First Avenger",
+    "poster": "https://image.tmdb.org/t/p/original/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg",
+    "realeseDate": "2011-11-29T07:00:00.337Z",
+    "diretor": "Joe Johnston",
+    "description": "Steve Rogers, a weak man from Brooklyn, becomes Captain America during World War II to stop the Red Skull, a Nazi leader aiming for world domination with a powerful device.",
+    "rating": "4",
+    "id": "5"
+  },
+  {
+    "name": "The Avengers",
+    "poster": "https://image.tmdb.org/t/p/original/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+    "realeseDate": "2012-04-07T23:00:00.007Z",
+    "diretor": "Joss Whedon",
+    "description": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+    "rating": "5",
+    "id": "6"
+  },
+  {
+    "name": "Iron-Man 3",
+    "poster": "https://image.tmdb.org/t/p/original/aFTYFqrWp4RS46Twm87l5e0ItYb.jpg",
+    "realeseDate": "2013-04-25T07:00:00",
+    "diretor": "Derek Hermiston",
+    "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+    "rating": "2",
+    "id": "7"
+  },
+  {
+    "name": "Thor: The Dark World",
+    "poster": "https://image.tmdb.org/t/p/original/4zTsF0RtO0av3YX1NaKDqGKPxYF.jpg",
+    "realeseDate": "2013-11-02T00:00:00.000Z",
+    "diretor": "Alan Taylor",
+    "description": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
+    "rating": "2",
+    "id": "8"
+  },
+  {
+    "name": "Captain America: The Winter Soldier",
+    "poster": "https://image.tmdb.org/t/p/original/1RWLMyC9KcFfcaoViMiJGSSZzzr.jpg",
+    "realeseDate": "2014-04-10T03:00:00.430Z",
+    "diretor": "Joe Russo and Anthony Russo",
+    "description": "After the cataclysmic events in New York with The Avengers, Steve Rogers, aka Captain America is living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy—the Winter Soldier.",
+    "rating": "5",
+    "id": "09"
+  },
+  {
+    "name": "Guardians of the Galaxy",
+    "poster": "https://image.tmdb.org/t/p/original/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg",
+    "realeseDate": "2014-07-31T16:00:00.367Z",
+    "diretor": "James Gunn",
+    "description": "Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.",
+    "rating": "5",
+    "id": "10"
+  },
+  {
+    "name": "Avengers: Age of Ultron",
+    "poster": "https://image.tmdb.org/t/p/original/6YwkGolwdOMNpbTOmLjoehlVWs5.jpg",
+    "realeseDate": "2015-04-23T23:00:00.288Z",
+    "diretor": "Joss Whedon",
+    "description": "When Tony Stark tries to jumpstart a dormant peacekeeping program, things go awry and Earth’s Mightiest Heroes are put to the ultimate test as the fate of the planet hangs in the balance. As the villainous Ultron emerges, it is up to The Avengers to stop him from enacting his terrible plans, and soon uneasy alliances and unexpected action pave the way for an epic and unique global adventure.",
+    "rating": "4",
+    "id": "11"
+  },
+  {
+    "name": "Ant-Man",
+    "poster": "https://image.tmdb.org/t/p/original/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg",
+    "realeseDate": "2015-07-16T11:00:00.819Z",
+    "diretor": "Peyton Reed",
+    "description": "Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Doctor Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world.",
+    "rating": "3",
+    "id": "12"
+  },
+  {
+    "name": "Captain America: Civil War",
+    "poster": "https://image.tmdb.org/t/p/original/kvRT3GwcnqGHzPjXIVrVPhUix7Z.jpg",
+    "realeseDate": "2016-05-05T02:00:00.689Z",
+    "diretor": "Joe Russo and Anthony Russo",
+    "description": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
+    "rating": "5",
+    "id": "13"
+  },
+  {
+    "name": "Doctor Strange",
+    "poster": "https://image.tmdb.org/t/p/original/3zvZ699gMW2RhWc0GisIukzq0Ls.jpg",
+    "realeseDate": "2016-11-02T06:00:00.801Z",
+    "diretor": "Scott Derrickson",
+    "description": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+    "rating": "3",
+    "id": "14"
+  },
+  {
+    "name": "Guardians of the Galaxy Vol.2",
+    "poster": "https://image.tmdb.org/t/p/original/aJn9XeesqsrSLKcHfHP4u5985hn.jpg",
+    "realeseDate": "2017-04-27T07:00:00",
+    "diretor": "James Gunn",
+    "description": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+    "rating": "4",
+    "id": "15"
+  },
+  {
+    "name": "Spiderman: Homecoming",
+    "poster": "https://image.tmdb.org/t/p/original/fn4n6uOYcB6Uh89nbNPoU2w80RV.jpg",
+    "realeseDate": "2017-07-06T16:00:00.233Z",
+    "diretor": "Jon Watts",
+    "description": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+    "rating": "3",
+    "id": "16"
+  },
+  {
+    "name": "Thor: Ragnarok",
+    "poster": "https://image.tmdb.org/t/p/original/6G2fLCVm9fiLyHvBrccq6GSe2ih.jpg",
+    "realeseDate": "2017-10-02T17:00:00.701Z",
+    "diretor": "Taika Waititi",
+    "description": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
+    "rating": "4",
+    "id": "17"
+  },
+  {
+    "name": "Black Panther",
+    "poster": "https://image.tmdb.org/t/p/original/b6ZJZHUdMEFECvGiDpJjlfUWela.jpg",
+    "realeseDate": "2018-02-15T07:00:00",
+    "diretor": "Ryan Coogler",
+    "description": "King T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, TChalla soon finds that he is challenged for the throne by factions within his own country as well as without. Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantle to join with ex-girlfriend Nakia, the queen-mother, his princess-kid sister, members of the Dora Milaje (the Wakandan 'special forces') and an American secret agent, to prevent Wakanda from being dragged into a world war.",
+    "rating": "5",
+    "id": "18"
+  },
+  {
+    "name": "Avengers: Infinity War",
+    "poster": "https://image.tmdb.org/t/p/original/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+    "realeseDate": "2018-04-26T12:00:00.612Z",
+    "diretor": "Joe Russo and Anthony Russo",
+    "description": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+    "rating": "5",
+    "id": "19"
+  },
+  {
+    "name": "Ant-man and the Wasp",
+    "poster": "https://image.tmdb.org/t/p/original/iYdgEUE2W2aJkgqfSjf1x3gFfuV.jpg",
+    "realeseDate": "2018-07-05T16:00:00.850Z",
+    "diretor": "Peyton Reed",
+    "description": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
+    "rating": "3",
+    "id": "20"
+  },
+  {
+    "name": "Captain Marvel",
+    "poster": "https://image.tmdb.org/t/p/original/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg",
+    "realeseDate": "2019-03-08T00:00:00.000Z",
+    "diretor": "Anna Boden and Ryan Fleck",
+    "description": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+    "rating": "2",
+    "id": "21"
+  },
+  {
+    "name": "Avengers: Endgame",
+    "poster": "https://image.tmdb.org/t/p/original/9wXPKruA6bWYk2co5ix6fH59Qr8.jpg",
+    "realeseDate": "2019-04-26T00:00:00.000Z",
+    "diretor": "Joe Russo and Anthony Russo\t",
+    "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+    "rating": "5",
+    "id": "22"
+  },
+  {
+    "name": "Spiderman: Far From Home",
+    "poster": "https://image.tmdb.org/t/p/original/34jW8LvjRplM8Pv06cBFDpLlenR.jpg",
+    "realeseDate": "2019-07-04T07:00:00",
+    "diretor": "Jon Watts",
+    "description": "Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.",
+    "rating": "2",
+    "id": "23"
+  },
+  {
+    "name": "Black Widow",
+    "poster": "https://image.tmdb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg",
+    "realeseDate": "2021-07-08T07:00:00",
+    "diretor": "Cate Shortland",
+    "description": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+    "rating": "2",
+    "id": "24"
+  }
+]

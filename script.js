@@ -4,15 +4,41 @@ const apiUrl = 'https://6730dfef7aaf2a9aff0f31ee.mockapi.io/movies';
 // Variável para armazenar o filme em edição
 let editingMovieId = null;
 
+let isFirstFetch = true; // Variável para verificar se é a primeira execução
+
 // Função para buscar filmes e atualizar a tabela
 async function fetchMovies() {
     try {
         const response = await fetch(apiUrl);
         const movies = await response.json();
         displayMovies(movies);
+        if (isFirstFetch) {
+            showNotification('Sucesso ao buscar filmes', 'success');
+            isFirstFetch = false; // Atualiza a variável para evitar repetições
+        }
     } catch (error) {
         showNotification('Erro ao buscar filmes', 'error');
     }
+}
+
+
+
+function showNotification(message, type) {
+    const container = document.getElementById('notification-container');
+
+    // Cria o elemento da notificação
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    console.log(`notification ${type}`);
+    notification.textContent = message;
+
+    // Adiciona ao container
+    container.appendChild(notification);
+
+    // Remove a notificação após 4 segundos
+    setTimeout(() => {
+        notification.remove();
+    }, 4000);
 }
 
 // Função para converter a data para o formato brasileiro
@@ -186,13 +212,10 @@ async function saveChanges() {
         if (response.ok) {
             closeEditPopup();
             fetchMovies(); // Recarregar a lista de filmes
-        } else {
-            console.error('Erro ao atualizar o filme:', response.statusText);
-            alert('Erro ao salvar as alterações. Tente novamente.');
+            showNotification('Filme editado com sucesso', 'success');
         }
     } catch (error) {
-        console.error('Erro ao atualizar o filme:', error);
-        alert('Ocorreu um erro inesperado. Verifique sua conexão e tente novamente.');
+        showNotification('Erro ao editar filme', 'error');
     }
 }
 
@@ -203,9 +226,10 @@ async function deleteMovie(id) {
         await fetch(`${apiUrl}/${id}`, {
             method: 'DELETE'
         });
+        showNotification('Filme excluído com sucesso', 'success');
         fetchMovies(); // Atualiza a lista de filmes após exclusão
     } catch (error) {
-        console.error('Erro ao excluir o filme:', error);
+        showNotification('Erro ao excluir filme', 'error');
     }
 }
 
@@ -306,11 +330,6 @@ function updateSortArrows(columnIndex, isAscending) {
 
 
 
-// Evento do formulário
-document.getElementById('movieForm').addEventListener('submit', saveMovie);
-
-// Carregar os filmes ao iniciar
-fetchMovies();
 
 
 // Função para abrir o pop-up de adição
@@ -410,13 +429,12 @@ async function salvarNovoFilme() {
         });
 
         if (resposta.ok) {
-            closeEditPopup(); // Fechar o popup após adicionar o filme
+            closeEditPopup(); // Fechar o popup após editar o filme
+            showNotification('Filme adicionado com sucesso', 'success');
             fetchMovies(); // Atualizar a lista de filmes
-        } else {
-            console.error('Erro ao adicionar o filme:', resposta.statusText);
         }
     } catch (erro) {
-        console.error('Erro ao adicionar o filme:', erro);
+        showNotification('Erro ao adicionar o filme', 'error');
     }
 }
 

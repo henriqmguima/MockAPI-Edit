@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spawt</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icons/logo-index.png" type="image/png">
+    <link rel="icon" href="icons/icons.png" type="image/png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
@@ -16,27 +16,13 @@
 <body>
     <div id="homepage-container">
         <header>
-            <img src="icons/logo-index.png" alt="">
+            <img src="icons/icons.png" alt="">
             <h1 class="titulo">spawt</h1>
             <input type="text" id="searchInput" placeholder="Buscar filmes...">
             <button class="btn-plus" onclick="openAddPopup()">
                 <span class="material-icons">add_circle</span>
             </button>            
         </header>
-            <!-- Formulário de Adição/Edição de Filmes -->
-            <!-- <div class="form-container">
-                <form id="movieForm">
-                    <h2 id="formTitle">Adicionar Filme</h2>
-                    <input type="text" id="name" placeholder="Nome do Filme" required>
-                    <input type="text" id="diretor" placeholder="Diretor" required>
-                    <input type="date" id="realeseDate" required>
-                    <input type="url" id="poster" placeholder="URL do Poster" required>
-                    <div class="buttons">
-                        <button type="submit">Adicionar</button>
-                    </div>
-                </form>
-            </div>
-            -->
         <div id="home-container">
             <h1>SPAWT</h1>
             <p class="text"><strong>Acesse, insira, edite e delete os conteúdos de uma API de filmes</strong></p>
@@ -44,6 +30,9 @@
             </p>
         </div>
     </div>
+    <!-- Container para as notificações -->
+    <div id="notification-container"></div>
+
     <!-- Tabela de Filmes -->
      <div class="options">
         <ul>

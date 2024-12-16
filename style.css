@@ -34,7 +34,7 @@ header img {
 #homepage-container {
     height: 65vh; /* Altura da tela inteira */
     width: 99vw;  /* Largura da tela inteira */
-    background-image: url('home.png');
+    background-image: url('imgs/home.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -249,7 +249,7 @@ td .image-container {
     display: inline-block;
     margin: 0;
     background: linear-gradient(45deg, #0F118D, #B70405); /* Gradiente da borda */
-    padding: 2px;
+    padding: 1px;
     border-radius: 10px;
 }
 
@@ -291,6 +291,14 @@ td .image-container {
     position: relative; /* Necessário para o posicionamento do pseudo-elemento */
     overflow: hidden; /* Garante que o gradiente não ultrapasse a célula */
     z-index: 0; /* Mantém o tr abaixo do pseudo-elemento */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Efeito de transição suave */
+
+}
+
+tr:hover{
+    transform: scale(1.05);
+    background-color: #f5f5f5;
+    border: none;
 }
 
 /* Pseudo-elemento para a borda gradiente */
@@ -304,7 +312,7 @@ td .image-container {
     background: linear-gradient(to right, #130c1c, #1f1d24); /* Gradiente desejado */
     border-radius: 8px; /* Opcional: arredonda as bordas */
     z-index: -1; /* Coloca o gradiente atrás do conteúdo da linha */
-    border: 2px solid #1c1916;
+    border: 1px solid #1c1916;
 }
 
 
@@ -449,3 +457,39 @@ input[type="date"] {
     font-family: 'Product Sans', Arial, sans-serif, sans-serif;
 }
 
+/* Estilo para o container */
+#notification-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* Estilo geral das notificações */
+.notification {
+    color:#070809;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeOut 4s forwards;
+}
+
+/* Notificação de erro */
+.notification.error {
+    color: #fff;
+    background: linear-gradient(#b70d04, #b72504);
+}
+.notification.success{
+    background: linear-gradient(#40b704, #04b72b);
+}
+
+
+/* Animação para sumir */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    90% { opacity: 0.9; }
+    100% { opacity: 0; }
+}
