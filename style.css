@@ -101,25 +101,6 @@ button {
     transform: scale(1.1); /* Increase size on hover */
   }
 
-.edit-btn{
-    background-color: #0f0d0d; /* Green */
-    border: 0.1px solid rgb(42, 41, 41);
-}
-
-.edit-btn:hover{
-    background-color: #1e1e1e; /* Green */
-}
-
-.dlt-btn{
-    background: #B70405; 
-    border: 0.1px solid #a81d1d;
-}
-
-.dlt-btn:hover{
-    background-color: #cb3a3a; /* Green */
-}
-
-
 .form-container {
     display: flex;
     justify-content: center;
@@ -159,29 +140,6 @@ a:hover{
     transition: 0.5s;
     color: #080bb2;
 }
-
-table {
-    text-align: center;
-    border-spacing: 0 50px; 
-    width: 80%;
-}
-
-th, td {
-    padding: 8px;
-    vertical-align: middle;
-}
-
-th:first-child, td:first-child {
-    width: 35%;
-}
-
-td img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
-
 .options {
     font-weight: bold;
     list-style: none;
@@ -228,6 +186,47 @@ td img {
     content: ' ▼'; /* Seta para baixo */
     font-size: 12px;
 }
+
+table {
+    text-align: center;
+    border-spacing: 0 20px;
+    width: 90%;
+    max-width: 1900px;   
+}
+
+th, td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+th:first-child, td:first-child {
+    width: 35%;
+}
+
+td img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.edit-btn{
+    background-color: #0f0d0d; /* Green */
+    border: 0.1px solid rgb(42, 41, 41);
+}
+
+.edit-btn:hover{
+    background-color: #1e1e1e; /* Green */
+}
+
+.dlt-btn{
+    background: #B70405; 
+    border: 0.1px solid #a81d1d;
+}
+
+.dlt-btn:hover{
+    background-color: #cb3a3a; /* Green */
+}
+
 
 thead .nomeh:hover, .diretorh:hover, .datah:hover{
     background-color: rgb(240, 248, 255);
@@ -296,7 +295,7 @@ td .image-container {
 }
 
 tr:hover{
-    transform: scale(1.05);
+    transform: scale(1.025);
     background-color: #f5f5f5;
     border: none;
 }
@@ -314,6 +313,7 @@ tr:hover{
     z-index: -1; /* Coloca o gradiente atrás do conteúdo da linha */
     border: 1px solid #1c1916;
 }
+
 
 
 .popup {
@@ -361,7 +361,7 @@ label{
 
 }
 .popup input {
-    min-width: 380px;
+    width: 380px;
     max-width: 380px;
     display: block;
     margin: 10px 0;
@@ -493,3 +493,162 @@ input[type="date"] {
     90% { opacity: 0.9; }
     100% { opacity: 0; }
 }
+
+@media screen and (max-width: 768px) {
+  
+    #homepage-container{
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        max-width: 700px;
+        margin: 0px;
+        max-height: 500px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    header .titulo{
+        margin: 0px !important;
+    }
+    
+    header img {
+        width: 5%;
+    }
+    #searchInput{
+        font-size: 12px;
+    }
+    .text{
+        width: 90%;
+        font-size: 17px;
+    }
+    #homepage-container h1{
+        margin: 20px auto;
+    }
+    table {
+        display: block;
+        width: 90%;
+    }
+    .options {
+        display: none; /* Oculta os cabeçalhos para exibição em colunas */
+    }
+
+    tbody, tr, td {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    tr {
+        display: flex;
+        border-radius: 2%;
+        flex-direction: column;
+        margin-bottom: 40px !important;
+    }
+
+    td {
+        text-align: left;
+    }
+
+    td.poster img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .info {
+        width: 100%; /* Agora ocupa todo o espaço disponível */
+        max-width: 600px; /* Limite opcional */
+    }
+
+    .info .nome {
+        margin: 10px 10px;
+    }
+
+    .description {
+        width: 100%; /* Ocupa todo o espaço disponível */
+        max-width: 90%; /* Garante que não ultrapasse o container */
+        height: auto; /* Deixa a altura ajustável */
+        overflow-wrap: break-word; /* Quebra palavras longas */
+        word-wrap: break-word; /* Alternativa para navegadores antigos */
+        white-space: normal; /* Garante que o texto quebre linhas */
+        margin: 10px 10px;
+    }
+
+    .details .diretor, .details .data {
+        font-size: 30px;
+        width: 600px;
+        max-width: 600px;
+        margin: 10px;
+    }
+  
+    .nota{
+        margin: 10px;
+    }
+    .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .edit-btn, .dlt-btn {
+        padding: 40px;
+        margin: 10px;
+        font-size: 14px;
+    }
+    .popup {
+        max-width: 600px; /* Limita a largura máxima */
+        padding: 15px;
+        border: 1px solid red;
+    }
+    .popup-border{
+        background: none;
+    }
+    .popup-content {
+        padding: 15px; /* Reduz o padding interno */
+        gap: 10px; /* Diminui o espaçamento entre os elementos */
+    }
+    
+    input, textarea {
+        width: 100%; /* Faz os inputs ocuparem toda a largura do modal */
+        font-size: 16px; /* Facilita a leitura em telas pequenas */
+    }
+}
+    
+
+
+/* Melhorando experiência em telas muito pequenas (mobile) */
+@media screen and (max-width: 480px) {
+    .info .nome {
+        font-size: 11px;
+    }
+
+    .details .diretor, .details .data {
+        font-size: 12px;
+    }
+
+    .edit-btn, .dlt-btn {
+        padding: 6px;
+        font-size: 12px;
+    }
+  
+    .popup-content {
+        padding: 10px; /* Reduz o padding interno */
+        gap: 10px; /* Diminui o espaçamento entre os elementos */
+    }
+    .popup-border{
+        width: 300px;
+    }
+    .popup input, texarea{
+        width: 275px;
+        font-size: 10px !important; /* Facilita a leitura em telas pequenas */
+
+    }
+     textarea {
+        width: 200px; /* Faz os inputs ocuparem toda a largura do modal */
+    }
+}
+
