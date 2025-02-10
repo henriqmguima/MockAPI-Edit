@@ -122,13 +122,14 @@ button {
     margin: 20px 0;
     width: 220px;
     font-size: 60px;
-    padding-left: 10px;
+    padding: 10px;
     background: linear-gradient(45deg, #cb3a3a, #B70405);
     border-radius: 3px; 
 }
 .text{
     width: 40%;
     font-size: 1em; line-height: 1.5em;
+    text-align: justify;
 }
 
 a{
@@ -493,16 +494,50 @@ input[type="date"] {
     90% { opacity: 0.9; }
     100% { opacity: 0; }
 }
+@media screen and (max-width: 1500px) {
+    #homepage-container{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin: 0;
+        background: linear-gradient(to right, #070809, #0B0C0E); 
 
-@media screen and (max-width: 768px) {
+    }
+    #homepage-container #home-container h1{
+        font-size: 100px;
+        width: auto;
+
+    }
+    #homepage-container #home-container .text{
+        font-size: 25px;
+        width: 800px;
+    }
+    #home-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
   
     #homepage-container{
         display: flex;
         flex-direction: column;
-        background-image: none;
         max-width: 700px;
         margin: 0px;
         max-height: 500px;
+    }
+    #homepage-container #home-container h1{
+        font-size: 60px;
+    }
+    #homepage-container #home-container .text{
+        font-size: 14px;
+        width: 620px;
     }
     header {
         display: flex;
@@ -510,23 +545,22 @@ input[type="date"] {
         justify-content: center;
         margin: 0px;
     }
-    header .titulo{
-        margin: 0px !important;
-    }
     
     header img {
         width: 5%;
     }
+    .btn-plus{
+        width: 100px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     #searchInput{
         font-size: 12px;
     }
-    .text{
-        width: 90%;
-        font-size: 17px;
-    }
-    #homepage-container h1{
-        margin: 20px auto;
-    }
+   
+    
     table {
         display: block;
         width: 90%;
@@ -618,10 +652,30 @@ input[type="date"] {
     }
 }
     
+@media screen and (max-width: 650px) {
+    #homepage-container #home-container .text{
+        font-size: 14px;
+        width: 450px;
+    }
 
+}
 
 /* Melhorando experiência em telas muito pequenas (mobile) */
 @media screen and (max-width: 480px) {
+    
+    .save-btn{
+        margin: 0px !important;
+        width: 100px;
+    }
+    #homepage-container #home-container .text{
+        width: auto;
+    }
+    .titulo{
+        display: none;
+    }
+    #searchInput{
+        width: auto;
+    }
     .info .nome {
         font-size: 11px;
     }
@@ -633,6 +687,9 @@ input[type="date"] {
     .edit-btn, .dlt-btn {
         padding: 6px;
         font-size: 12px;
+    }
+    header img {
+        display: none;
     }
   
     .popup-content {
