@@ -32,8 +32,8 @@ header img {
 }
 
 #homepage-container {
-    height: 65vh; /* Altura da tela inteira */
-    width: 99vw;  /* Largura da tela inteira */
+    height: 65vh; 
+    width: 99vw;  
     background-image: url('imgs/home.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,14 +73,14 @@ form input{
     border: 0.1px solid #cb3a3a
 }
 .btn-plus:hover{
-    background-image: url('https://64.media.tumblr.com/f08b61016736dfb7e9b5f87a4ecc8637/tumblr_n19f0274mT1s8gf9ko5_500.gifv'); /* O GIF que aparece ao passar o mouse */
+    background-image: url('https://64.media.tumblr.com/f08b61016736dfb7e9b5f87a4ecc8637/tumblr_n19f0274mT1s8gf9ko5_500.gifv'); 
     background-size: cover; /* Faz o GIF cobrir todo o elemento */
     background-position: center; /* Centraliza o GIF dentro do elemento */
     border: 0.1px solid #fff;
-    transform: scale(1.1); /* Increase size on hover */
+    transform: scale(1.1); 
 }
 button {
-    background-color: #0F118D; /* Green */
+    background-color: #0F118D;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -97,18 +97,18 @@ button {
   }
   
   button:hover {
-    background-color: #080959; /* Darker green */
-    transform: scale(1.1); /* Increase size on hover */
+    background-color: #080959; 
+    transform: scale(1.1); 
   }
 
 .form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px; /* Ajuste para a espessura da borda */
-    background: linear-gradient(45deg, #0F118D, #B70405); /* Gradiente da borda */
-    border-radius: 12px; /* Arredonda a borda externa */
-    width: 406px; /* Ajuste para acomodar o padding do gradiente */
+    padding: 3px;
+    background: linear-gradient(45deg, #0F118D, #B70405); 
+    border-radius: 12px; 
+    width: 406px; 
 }
 
 #home-container{
@@ -150,33 +150,33 @@ a:hover{
 }
 
 .options ul {
-    list-style: none; /* Remove os marcadores da lista */
+    list-style: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Exibe os itens lado a lado */
-    gap: 15px; /* Espaçamento entre os itens */
+    display: flex; 
+    gap: 15px; 
 }
 
 .options li {
-    cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    color: white; /* Texto branco */
-    font-weight: bold; /* Negrito */
+    cursor: pointer; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    color: white;
+    font-weight: bold; 
     transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza alterações */
     border: 0.1px solid transparent;
 
 }
 
 .options li:hover {
-    background-color: #221625; /* Green */
+    background-color: #221625; 
     border: 0.1px solid rgb(42, 41, 41);
-    transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .options li:active {
-    transform: scale(1); /* Volta ao tamanho original ao clicar */
-    background-color: #004085; /* Cor ainda mais escura ao clicar */
+    transform: scale(1); 
+    background-color: #004085; 
 }
 .options li.ascending::after {
     content: ' ▲'; /* Seta para cima */
@@ -211,12 +211,12 @@ td img {
     border-radius: 10px;
 }
 .edit-btn{
-    background-color: #0f0d0d; /* Green */
+    background-color: #0f0d0d; 
     border: 0.1px solid rgb(42, 41, 41);
 }
 
 .edit-btn:hover{
-    background-color: #1e1e1e; /* Green */
+    background-color: #1e1e1e; 
 }
 
 .dlt-btn{
@@ -225,7 +225,7 @@ td img {
 }
 
 .dlt-btn:hover{
-    background-color: #cb3a3a; /* Green */
+    background-color: #cb3a3a; 
 }
 
 
@@ -244,11 +244,11 @@ tbody tr:nth-child(even) {
 
 td .image-container {
     width: 100%;
-    height: 100%; /* Ajusta a altura da imagem ao tamanho da célula */
+    height: 100%;
     object-fit: cover; /* Corta a imagem para preencher completamente a célula */
     display: inline-block;
     margin: 0;
-    background: linear-gradient(45deg, #0F118D, #B70405); /* Gradiente da borda */
+    background: linear-gradient(45deg, #0F118D, #B70405);
     padding: 1px;
     border-radius: 10px;
 }
@@ -291,7 +291,7 @@ td .image-container {
     position: relative; /* Necessário para o posicionamento do pseudo-elemento */
     overflow: hidden; /* Garante que o gradiente não ultrapasse a célula */
     z-index: 0; /* Mantém o tr abaixo do pseudo-elemento */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Efeito de transição suave */
+    transition: opacity 0.3s ease, transform 0.3s ease; 
 
 }
 
@@ -305,12 +305,12 @@ tr:hover{
 #moviesTable tr::before {
     content: '';
     position: absolute;
-    top: -2px; /* Para estender a borda para fora do tr */
+    top: -2px; 
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(to right, #130c1c, #1f1d24); /* Gradiente desejado */
-    border-radius: 8px; /* Opcional: arredonda as bordas */
+    background: linear-gradient(to right, #130c1c, #1f1d24);
+    border-radius: 8px;
     z-index: -1; /* Coloca o gradiente atrás do conteúdo da linha */
     border: 1px solid #1c1916;
 }
@@ -318,7 +318,7 @@ tr:hover{
 
 
 .popup {
-    display: none; /* Inicialmente escondido */
+    display: none; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -338,7 +338,7 @@ tr:hover{
     border-radius: 10px;
 }
 .popup-content {
-    background-color: #0f0f0f; /* Cor de fundo interna do formulário */
+    background-color: #0f0f0f; 
     padding: 20px 50px;
     border-radius: 8px;
     display: flex;
@@ -346,7 +346,7 @@ tr:hover{
     gap: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Distância entre os conjuntos de label e input */
+    gap: 20px; 
 }
 
 .input-label {
@@ -391,7 +391,7 @@ label{
 
 .popup .input-label span {
     display: block;
-    min-height: 18px; /* Ajuste a altura conforme necessário */
+    min-height: 18px; 
     color: red;
     font-size: 0.9em;
     margin-top: 3px;
@@ -423,15 +423,15 @@ label{
 
 }
 .popup.show {
-    display: flex; /* Torna visível */
-    opacity: 1; /* Torna totalmente opaco */
-    transform: translate(-50%, -50%) scale(1); /* Redefine a escala para normal */
+    display: flex; 
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1); 
 }
 
 .star {
-    width: 20px; /* Defina o tamanho da estrela */
+    width: 20px; 
     height: 20px;
-    margin-right: 2px; /* Espaço entre as estrelas */
+    margin-right: 2px; 
     vertical-align: middle;
 }
 
@@ -442,14 +442,14 @@ label{
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    background-color: #ffffff; /* Cor de fundo do ícone */
+    background-color: #ffffff; 
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;
 }
 
 input[type="date"]::-moz-calendar-picker-indicator {
-    background-color: #ffffff; /* Cor de fundo do ícone */
+    background-color: #ffffff; 
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;
@@ -566,7 +566,7 @@ input[type="date"] {
         width: 90%;
     }
     .options {
-        display: none; /* Oculta os cabeçalhos para exibição em colunas */
+        display: none; 
     }
 
     tbody, tr, td {
@@ -594,8 +594,8 @@ input[type="date"] {
     }
 
     .info {
-        width: 100%; /* Agora ocupa todo o espaço disponível */
-        max-width: 600px; /* Limite opcional */
+        width: 100%; 
+        max-width: 600px;
     }
 
     .info .nome {
@@ -603,12 +603,10 @@ input[type="date"] {
     }
 
     .description {
-        width: 100%; /* Ocupa todo o espaço disponível */
-        max-width: 90%; /* Garante que não ultrapasse o container */
-        height: auto; /* Deixa a altura ajustável */
-        overflow-wrap: break-word; /* Quebra palavras longas */
-        word-wrap: break-word; /* Alternativa para navegadores antigos */
-        white-space: normal; /* Garante que o texto quebre linhas */
+        width: 100%; 
+        max-width: 90%; 
+        height: auto; 
+        white-space: normal; 
         margin: 10px 10px;
     }
 
@@ -634,7 +632,7 @@ input[type="date"] {
         font-size: 14px;
     }
     .popup {
-        max-width: 600px; /* Limita a largura máxima */
+        max-width: 600px; 
         padding: 15px;
         border: 1px solid red;
     }
@@ -642,16 +640,16 @@ input[type="date"] {
         background: none;
     }
     .popup-content {
-        padding: 15px; /* Reduz o padding interno */
-        gap: 10px; /* Diminui o espaçamento entre os elementos */
+        padding: 15px; 
+        gap: 10px; 
     }
     
     input, textarea {
-        width: 100%; /* Faz os inputs ocuparem toda a largura do modal */
-        font-size: 16px; /* Facilita a leitura em telas pequenas */
+        width: 100%;
+        font-size: 16px; 
     }
 }
-    
+/* Ajustanto texto principal do site */    
 @media screen and (max-width: 650px) {
     #homepage-container #home-container .text{
         font-size: 14px;
@@ -693,19 +691,19 @@ input[type="date"] {
     }
   
     .popup-content {
-        padding: 10px; /* Reduz o padding interno */
-        gap: 10px; /* Diminui o espaçamento entre os elementos */
+        padding: 10px; 
+        gap: 10px;
     }
     .popup-border{
         width: 300px;
     }
     .popup input, texarea{
         width: 275px;
-        font-size: 10px !important; /* Facilita a leitura em telas pequenas */
+        font-size: 10px !important; 
 
     }
      textarea {
-        width: 200px; /* Faz os inputs ocuparem toda a largura do modal */
+        width: 200px; 
     }
 }
 
