@@ -1,5 +1,5 @@
 // URL da API - substitua pelo endpoint da sua API
-const apiUrl = 'https://6730dfef7aaf2a9aff0f31ee.mockapi.io/movies';
+const apiUrl = 'https://67e1b05058cc6bf78526cb66.mockapi.io/movies';
 
 // Variável para armazenar o filme em edição
 let editingMovieId = null;
